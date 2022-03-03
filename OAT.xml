@@ -19,13 +19,18 @@
 
 <configuration>
     <oatconfig>
-        <licensefile></licensefile>
+        <licensefile/>
         <policylist>
             <policy name="projectPolicy" desc="">
                 <policyitem type="license" name="Apache-2.0" path=".*" desc="Apache License"/>
             </policy>
         </policylist>
         <filefilterlist>
+            <filefilter name="defaultFilter" desc="Files not to check">
+                <filteritem type="filepath" name="data/prebuild/posix/.*" desc="iana timezone binary data files for musl module"/>
+                <filteritem type="filepath" name="data/prebuild/icu/.*.res" desc="iana timezone binary data files for icu module"/>
+                <filteritem type="filepath" name="data/prebuild/tool/linux/zic" desc="iana timezone data compile tool"/>
+            </filefilter>
         </filefilterlist>
     </oatconfig>
 </configuration>
