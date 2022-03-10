@@ -18,7 +18,7 @@
 /base/global/
 ├── timezone           # 时区数据管理组件代码仓
 │   ├── data          # 时区编译数据目录
-│   ├── tool          # 国际化框架接口
+│   ├── tool          # 时区数据管理工具
 │   │   ├── compile_tool              # 时区数据编译工具
 │   │   └── update_tool          # 时区数据更新工具
 ```
