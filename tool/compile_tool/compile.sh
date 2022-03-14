@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+set -e
 script_path=$(cd $(dirname $0);pwd)
 iana_path="${script_path}/../../data/iana"
 posix_path="${iana_path}/../prebuild/posix"
@@ -30,3 +30,4 @@ rm -rf ${posix_path}/*
 mv ${iana_path}/zoneinfo/* ${posix_path}
 mv ${iana_path}/version.txt ${posix_path}
 echo 'done'
+exit 0
