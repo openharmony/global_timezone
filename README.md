@@ -1,40 +1,37 @@
-# i18n
+# Time Zone
 
 ## Introduction
 
-The timezone module provides a tool set for timezone data management which includes timezone data update, parse, compile, deploy.
+The time zone module provides the functions of updating, parsing, compiling, and deploying time zone data.
 
 ## Directory Structure
 
-The directory structure for the timezone module is as follows:
+The directory structure of the time zone module is as follows:
 
 ```
 /base/global/
-├── timezone           # repository for the timezone data management
-│   ├── data          # Directory of compiled timezone data
-│   ├── tool          # TimeZone data management tool set
-│   │   ├── compile_tool              # TimeZone data compile tool
-│   │   └── update_tool          # TimeZone data update tool
+├── timezone           # Code repository of the time zone module
+│   ├── data          # Time zone compilation data
+│   ├── tool          # Time zone management tools
+│   │   ├── compile_tool              # Tool for compiling time zone data
+│   │   └── update_tool          # Tool for updating time zone data
 ```
-
-## Constraints
 
 ## Usage
 
-Provide time zone data management functions, including time zone data update, parse, compile and deploy functions. Take the time zone data update tool as an example. This tool will search the latest version of the current time zone data from the IANA time zone data official website. If there is a new version, download the latest version to update the data; Otherwise, the data update operation is not performed. 
+Take time zone data update as an example. The time zone module searches for the latest version of the current time zone data from the Internet Assigned Numbers Authority (IANA) database. The module downloads the latest version to update the data only if a new version is available. Example:
 
 ```
-cd tool/update_tool  // change directory to update tool directory.
-python3 download_iana.py  // run data update script.
+cd tool/update_tool  // Switch to the directory where the update tool is located.
+python3 download_iana.py  // Run the data update script.
 ```
 
 ## Repositories Involved
 
-[Globalization subsystem](https://gitee.com/openharmony/docs/blob/master/en/readme/globalization.md)
+[Globalization Subsystem](https://gitee.com/openharmony/docs/blob/master/en/readme/globalization.md)
 
 **global\_timezone**
 
 [global\_i18n\_standard](https://gitee.com/openharmony/global_i18n_standard/blob/master/README.md)
 
 [global\_resmgr\_standard](https://gitee.com/openharmony/global_resmgr_standard/blob/master/README.md)
-
