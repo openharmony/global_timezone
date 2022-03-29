@@ -44,6 +44,7 @@ def try_download(file_type, try_version, save_path, version):
         return -1
     print('start to download ' + file_name)
     content = data.read()
+    data.close()
     with open(save_path + file_name, 'wb+') as file:
         file.write(content)
     print('download finished!')
