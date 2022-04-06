@@ -12,18 +12,26 @@ The directory structure of the time zone module is as follows:
 /base/global/
 ├── timezone           # Code repository of the time zone module
 │   ├── data          # Time zone compilation data
-│   ├── tool          # Time zone management tools
-│   │   ├── compile_tool              # Tool for compiling time zone data
-│   │   └── update_tool          # Tool for updating time zone data
+│   ├── tool          # Time zone management tool
+│   │   ├── compile_tool              # Time zone compilation tool
+│   │   └── update_tool          # Time zone update tool
 ```
 
-## Usage
+## Description
 
-Take time zone data update as an example. The time zone module searches for the latest version of the current time zone data from the Internet Assigned Numbers Authority (IANA) database. The module downloads the latest version to update the data only if a new version is available. Example:
+The time zone update tool searches for the latest version of time zone data from the [Internet Assigned Numbers Authority (IANA) database](https://data.iana.org/time-zones/releases/). If a new version of time zone data is available, the time zone update tool downloads the data to update the local time zone data. The updated time zone data is saved in the **./data/iana/** directory. The following is an example:
 
 ```
-cd tool/update_tool  // Switch to the directory where the update tool is located.
+cd tool/update_tool // Go to the directory where the time zone update tool is located.
 python3 download_iana.py  // Run the data update script.
+```
+
+The time zone compilation tool compiles the time zone source data and generates time zone binary data in **./data/prebuild/posix**. The following is an example:
+
+```
+cd tool/compile_tool // Go to the directory where the time zone compilation tool is located.
+chmod 755 compile.sh
+./compile.sh // Run the compilation script.
 ```
 
 ## Repositories Involved
