@@ -3498,7 +3498,7 @@ group("zoneinfo") {
       ":Pacific/Chuuk",
       ":Pacific/Easter",
       ":Pacific/Efate",
-      ":Pacific/Enderbury",
+      ":Pacific/Kanton",
       ":Pacific/Fakaofo",
       ":Pacific/Fiji",
       ":Pacific/Funafuti",

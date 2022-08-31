@@ -28,7 +28,7 @@
         <filefilterlist>
             <filefilter name="defaultFilter" desc="Files not to check">
                 <filteritem type="filepath" name="data/prebuild/posix/.*" desc="预编译二进制，构建参考 binary_file_build.md"/>
-                <filteritem type="filepath" name="data/prebuild/icu/.*.res" desc="预编译二进制，来源于icu的67.1版本，遵循原开源软件许可声明"/>
+                <filteritem type="filepath" name="data/prebuild/icu/.*.res" desc="预编译二进制，来源于icu的69.1版本，遵循原开源软件许可声明"/>
                 <filteritem type="filepath" name="data/prebuild/tool/linux/zic" desc="预编译二进制，构建参考 binary_file_build.md"/>
             </filefilter>
         </filefilterlist>
