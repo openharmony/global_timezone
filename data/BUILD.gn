@@ -2865,8 +2865,8 @@ ohos_prebuilt_etc("Pacific/Efate") {
   subsystem_name = "global"
 }
 
-ohos_prebuilt_etc("Pacific/Enderbury") {
-  source = "//base/global/timezone/data/prebuild/posix/Pacific/Enderbury"
+ohos_prebuilt_etc("Pacific/Kanton") {
+  source = "//base/global/timezone/data/prebuild/posix/Pacific/Kanton"
   module_install_dir = "etc/zoneinfo"
   part_name = "timezone"
   subsystem_name = "global"
