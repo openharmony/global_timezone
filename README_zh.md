@@ -15,7 +15,7 @@ cd tool/update_tool  // 切换到时区数据更新工具所在目录
 python3 download_iana.py  // 执行数据更新脚本
 ```
 
-- **时区数据编译**会对时区源数据进行编译，并在./data/prebuild/posix目录下生成时区二进制数据。示例如下：
+- **时区数据编译**会对时区源数据进行编译，并在./data/prebuild/posix目录下生成时区二进制数据，在./data/prebuild/tool/linux目录下生成时区工具zic。示例如下：
 
 ```
 cd tool/compile_tool  // 切换到时区数据编译工具所在目录
