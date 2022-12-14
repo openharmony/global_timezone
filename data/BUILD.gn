@@ -1130,7 +1130,7 @@ ohos_prebuilt_etc("America/North_Dakota/Center") {
 
 ohos_prebuilt_etc("America/North_Dakota/New_Salem") {
   source = "//base/global/timezone/data/prebuild/posix/America/North_Dakota/New_Salem"
-  module_install_dir = "etc/zoneinfo/America/North_Dakota"
+  module_install_dir = "etc/zoneinfo/America/New_Salem"
   part_name = "timezone"
   subsystem_name = "global"
 }
