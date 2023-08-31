@@ -757,7 +757,7 @@ ohos_prebuilt_etc("America/Glace_Bay") {
 }
 
 ohos_prebuilt_etc("America/Godthab") {
-  source = "//base/global/timezone/data/prebuild/posix/America/Godthab"
+  source = "./prebuild/posix/America/Godthab"
   module_install_dir = "etc/zoneinfo/America"
   part_name = "timezone"
   subsystem_name = "global"
@@ -966,7 +966,7 @@ ohos_prebuilt_etc("America/Los_Angeles") {
 }
 
 ohos_prebuilt_etc("America/Louisville") {
-  source = "//base/global/timezone/data/prebuild/posix/America/Louisville"
+  source = "./prebuild/posix/America/Louisville"
   module_install_dir = "etc/zoneinfo/America"
   part_name = "timezone"
   subsystem_name = "global"
@@ -1949,7 +1949,7 @@ ohos_prebuilt_etc("Asia/Qyzylorda") {
 }
 
 ohos_prebuilt_etc("Asia/Rangoon") {
-  source = "//base/global/timezone/data/prebuild/posix/Asia/Rangoon"
+  source = "./prebuild/posix/Asia/Rangoon"
   module_install_dir = "etc/zoneinfo/Asia"
   part_name = "timezone"
   subsystem_name = "global"
@@ -2264,7 +2264,7 @@ ohos_prebuilt_etc("Australia/Sydney") {
 }
 
 ohos_prebuilt_etc("Brazil/DeNoronha") {
-  source = "//base/global/timezone/data/prebuild/posix/Brazil/DeNoronha"
+  source = "./prebuild/posix/Brazil/DeNoronha"
   module_install_dir = "etc/zoneinfo/Brazil"
   part_name = "timezone"
   subsystem_name = "global"
@@ -2894,7 +2894,7 @@ ohos_prebuilt_etc("Pacific/Efate") {
 }
 
 ohos_prebuilt_etc("Pacific/Enderbury") {
-  source = "//base/global/timezone/data/prebuild/posix/Pacific/Enderbury"
+  source = "./prebuild/posix/Pacific/Enderbury"
   module_install_dir = "etc/zoneinfo/Pacific"
   part_name = "timezone"
   subsystem_name = "global"
