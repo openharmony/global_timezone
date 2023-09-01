@@ -20,7 +20,7 @@ zic_path="${iana_path}/../prebuild/tool/linux"
 make -C ${iana_path}
 mv ${iana_path}/zic ${zic_path}
 
-state_name=('africa' 'antarctica' 'asia' 'australasia' 'europe' 'northamerica' 'southamerica')
+state_name=('africa' 'antarctica' 'asia' 'australasia' 'europe' 'etcetera' 'northamerica' 'southamerica' 'backward')
 for name in ${state_name[@]}
 do
     ${zic_path}/zic -d ${iana_path}/zoneinfo ${iana_path}/$name

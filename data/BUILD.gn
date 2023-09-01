@@ -756,6 +756,13 @@ ohos_prebuilt_etc("America/Glace_Bay") {
   subsystem_name = "global"
 }
 
+ohos_prebuilt_etc("America/Godthab") {
+  source = "./prebuild/posix/America/Godthab"
+  module_install_dir = "etc/zoneinfo/America"
+  part_name = "timezone"
+  subsystem_name = "global"
+}
+
 ohos_prebuilt_etc("America/Goose_Bay") {
   source = "//base/global/timezone/data/prebuild/posix/America/Goose_Bay"
   module_install_dir = "etc/zoneinfo/America"
@@ -953,6 +960,13 @@ ohos_prebuilt_etc("America/Lima") {
 
 ohos_prebuilt_etc("America/Los_Angeles") {
   source = "//base/global/timezone/data/prebuild/posix/America/Los_Angeles"
+  module_install_dir = "etc/zoneinfo/America"
+  part_name = "timezone"
+  subsystem_name = "global"
+}
+
+ohos_prebuilt_etc("America/Louisville") {
+  source = "./prebuild/posix/America/Louisville"
   module_install_dir = "etc/zoneinfo/America"
   part_name = "timezone"
   subsystem_name = "global"
@@ -1934,6 +1948,13 @@ ohos_prebuilt_etc("Asia/Qyzylorda") {
   subsystem_name = "global"
 }
 
+ohos_prebuilt_etc("Asia/Rangoon") {
+  source = "./prebuild/posix/Asia/Rangoon"
+  module_install_dir = "etc/zoneinfo/Asia"
+  part_name = "timezone"
+  subsystem_name = "global"
+}
+
 ohos_prebuilt_etc("Asia/Riyadh") {
   source = "//base/global/timezone/data/prebuild/posix/Asia/Riyadh"
   module_install_dir = "etc/zoneinfo/Asia"
@@ -2238,6 +2259,13 @@ ohos_prebuilt_etc("Australia/Perth") {
 ohos_prebuilt_etc("Australia/Sydney") {
   source = "//base/global/timezone/data/prebuild/posix/Australia/Sydney"
   module_install_dir = "etc/zoneinfo/Australia"
+  part_name = "timezone"
+  subsystem_name = "global"
+}
+
+ohos_prebuilt_etc("Brazil/DeNoronha") {
+  source = "./prebuild/posix/Brazil/DeNoronha"
+  module_install_dir = "etc/zoneinfo/Brazil"
   part_name = "timezone"
   subsystem_name = "global"
 }
@@ -2865,6 +2893,13 @@ ohos_prebuilt_etc("Pacific/Efate") {
   subsystem_name = "global"
 }
 
+ohos_prebuilt_etc("Pacific/Enderbury") {
+  source = "./prebuild/posix/Pacific/Enderbury"
+  module_install_dir = "etc/zoneinfo/Pacific"
+  part_name = "timezone"
+  subsystem_name = "global"
+}
+
 ohos_prebuilt_etc("Pacific/Kanton") {
   source = "//base/global/timezone/data/prebuild/posix/Pacific/Kanton"
   module_install_dir = "etc/zoneinfo/Pacific"
@@ -3198,6 +3233,7 @@ group("zoneinfo") {
       ":America/Fort_Nelson",
       ":America/Fortaleza",
       ":America/Glace_Bay",
+      ":America/Godthab",
       ":America/Goose_Bay",
       ":America/Grand_Turk",
       ":America/Grenada",
@@ -3226,6 +3262,7 @@ group("zoneinfo") {
       ":America/La_Paz",
       ":America/Lima",
       ":America/Los_Angeles",
+      ":America/Louisville",
       ":America/Lower_Princes",
       ":America/Maceio",
       ":America/Managua",
@@ -3365,6 +3402,7 @@ group("zoneinfo") {
       ":Asia/Qatar",
       ":Asia/Qostanay",
       ":Asia/Qyzylorda",
+      ":Asia/Rangoon",
       ":Asia/Riyadh",
       ":Asia/Sakhalin",
       ":Asia/Samarkand",
@@ -3409,6 +3447,7 @@ group("zoneinfo") {
       ":Australia/Melbourne",
       ":Australia/Perth",
       ":Australia/Sydney",
+      ":Brazil/DeNoronha",
       ":CET",
       ":CST6CDT",
       ":EET",
@@ -3498,6 +3537,7 @@ group("zoneinfo") {
       ":Pacific/Chuuk",
       ":Pacific/Easter",
       ":Pacific/Efate",
+      ":Pacific/Enderbury",
       ":Pacific/Fakaofo",
       ":Pacific/Fiji",
       ":Pacific/Funafuti",
