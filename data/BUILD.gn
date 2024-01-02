@@ -2033,7 +2033,7 @@ ohos_prebuilt_etc("Asia/Tehran") {
 }
 
 ohos_prebuilt_etc("Asia/Thimbu") {
-  source = "//base/global/timezone/data/prebuild/posix/Asia/Thimbu"
+  source = "./prebuild/posix/Asia/Thimbu"
   module_install_dir = "etc/zoneinfo/Asia"
   part_name = "timezone"
   subsystem_name = "global"
