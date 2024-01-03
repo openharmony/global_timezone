@@ -2032,8 +2032,8 @@ ohos_prebuilt_etc("Asia/Tehran") {
   subsystem_name = "global"
 }
 
-ohos_prebuilt_etc("Asia/Thimphu") {
-  source = "//base/global/timezone/data/prebuild/posix/Asia/Thimphu"
+ohos_prebuilt_etc("Asia/Thimbu") {
+  source = "./prebuild/posix/Asia/Thimbu"
   module_install_dir = "etc/zoneinfo/Asia"
   part_name = "timezone"
   subsystem_name = "global"
@@ -3414,7 +3414,7 @@ group("zoneinfo") {
       ":Asia/Tashkent",
       ":Asia/Tbilisi",
       ":Asia/Tehran",
-      ":Asia/Thimphu",
+      ":Asia/Thimbu",
       ":Asia/Tokyo",
       ":Asia/Tomsk",
       ":Asia/Ulaanbaatar",
