@@ -36,9 +36,6 @@
     "component": {
         "name": "timezone",
         "subsystem": "global",
-        "syscap": [
-            "SystemCapability.Global.I18n"
-        ],
         "features": [],
         "adapted_system_type": [
             "standard"
