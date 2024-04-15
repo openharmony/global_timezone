@@ -23,10 +23,13 @@ import ssl
 import tarfile
 import sys
 import os
+import stat
 
 
 def find_current_version(path):
-    with open(path, 'r') as file:
+    flags = os.O_RDONLY
+    modes = stat.S_IWUSR | stat.S_IRUSR
+    with os.fdopen(os.open(path, flags, modes), 'r') as file:
         version = file.readline().strip()
         return version
 
@@ -45,7 +48,9 @@ def try_download(file_type, try_version, save_path, version):
     print('start to download ' + file_name)
     content = data.read()
     data.close()
-    with open(save_path + file_name, 'wb+') as file:
+    flags = os.O_WRONLY | os.O_CREAT | os.O_EXCL
+    modes = stat.S_IWUSR | stat.S_IRUSR
+    with os.fdopen(os.open(save_path + file_name, flags, modes), 'wb+') as file:
         file.write(content)
     print('download finished!')
     return 1
