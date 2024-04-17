@@ -109,7 +109,9 @@ def main():
         new_version = file_name[6:11]
         try_download(file_type, new_version, download_path, version)
         decompress(file_type + new_version + '.tar.gz', download_path)
-        with open(os.path.join(download_path, 'version.txt'), 'w') as file:
+        flags = os.O_WRONLY
+        modes = stat.S_IWUSR | stat.S_IRUSR
+        with os.fdopen(os.open(os.path.join(download_path, 'version.txt'), flags, modes), 'w') as file:
             file.write(new_version + '\n')
 
 
