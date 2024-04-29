@@ -43,7 +43,9 @@
         "rom": "",
         "ram": "",
         "deps": {
-            "components": [],
+            "components": [
+                "tzdata"
+            ],
             "third_party": []
         },
         "build": {

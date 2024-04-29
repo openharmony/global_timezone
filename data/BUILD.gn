@@ -50,5 +50,8 @@ group("icu_tzdata") {
       ":windowsZones",
       ":zoneinfo64",
     ]
+    external_deps = [
+      "tzdata:zoneinfo"
+    ]
   }
 }
