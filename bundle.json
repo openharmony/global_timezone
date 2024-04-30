@@ -48,7 +48,6 @@
         },
         "build": {
             "sub_component": [
-                "//base/global/timezone/data:zoneinfo",
                 "//base/global/timezone/data:icu_tzdata"
             ],
             "inner_kits": [],
