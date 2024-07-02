@@ -30,7 +30,6 @@
                 <filteritem type="filepath" name="figures/timezone.png" desc="README图片，不参与编译运行"/>
             </filefilter>
             <filefilter name="defaultFilter" desc="Files not to check">
-                <filteritem type="filepath" name="data/prebuild/posix/.*" desc="预编译二进制，构建数据来自于 third_party_tzdata"/>
                 <filteritem type="filepath" name="data/prebuild/icu/.*.res" desc="预编译二进制，来源于icu的69.1版本，遵循原开源软件许可声明"/>
                 <filteritem type="filepath" name="data/prebuild/tool/linux/zic" desc="预编译二进制，构建参考 binary_file_build.md"/>
             </filefilter>
